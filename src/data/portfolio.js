@@ -152,236 +152,214 @@ export const projects = [
     link: "https://github.com/venkatesh-reddy-prog/EDUNET-Project",
   },
 ];
-
 export const skills = {
   Backend: {
     icon: "⚙",
     groups: [
       {
-        title: "Languages",
+        title: "Programming Languages",
         items: [
-          { name: "Java", level: "expert" }, { name: "Python", level: "proficient" },
-          { name: "SQL", level: "proficient" }, { name: "TypeScript", level: "familiar" },
+          { name: "Java", level: "expert" },
+          { name: "Python", level: "proficient" },
           { name: "JavaScript", level: "proficient" },
+          { name: "SQL", level: "proficient" }
         ],
       },
       {
         title: "Frameworks",
         items: [
-          { name: "Spring Boot", level: "expert" }, { name: "Spring MVC", level: "expert" },
-          { name: "Spring Security", level: "expert" }, { name: "REST APIs", level: "expert" },
-          { name: "Hibernate / JPA", level: "proficient" }, { name: "Servlet / JSP", level: "proficient" },
-          { name: "FastAPI", level: "proficient" }, { name: "Maven", level: "expert" },
+          { name: "Spring Boot", level: "expert" },
+          { name: "Spring MVC", level: "expert" },
+          { name: "Spring Security", level: "expert" },
+          { name: "Hibernate / JPA", level: "proficient" },
+          { name: "FastAPI", level: "proficient" }
         ],
       },
       {
-        title: "API & Communication",
+        title: "API & Architecture",
         items: [
-          { name: "RESTful API Design", level: "expert" }, { name: "WebSocket", level: "expert" },
-          { name: "GraphQL", level: "proficient" }, { name: "gRPC", level: "proficient" },
-          { name: "JWT / OAuth2", level: "expert" }, { name: "API Gateway", level: "proficient" },
-          { name: "Apache Kafka", level: "proficient" },
+          { name: "RESTful APIs", level: "expert" },
+          { name: "Microservices", level: "expert" },
+          { name: "WebSocket", level: "proficient" },
+          { name: "JWT Authentication", level: "expert" },
+          { name: "OAuth2", level: "proficient" }
         ],
       },
       {
         title: "Testing",
         items: [
-          { name: "JUnit 5", level: "expert" }, { name: "Mockito", level: "expert" },
-          { name: "Integration Testing", level: "proficient" }, { name: "JaCoCo", level: "proficient" },
-          { name: "TDD", level: "proficient" },
+          { name: "JUnit", level: "expert" },
+          { name: "Mockito", level: "expert" },
+          { name: "Integration Testing", level: "proficient" },
+          { name: "JaCoCo", level: "proficient" }
         ],
       },
     ],
   },
+
   Frontend: {
     icon: "🎨",
     groups: [
       {
-        title: "Core Languages",
+        title: "Core",
         items: [
-          { name: "HTML5", level: "expert" }, { name: "CSS3", level: "expert" },
-          { name: "JavaScript ES6+", level: "proficient" }, { name: "TypeScript", level: "proficient" },
+          { name: "HTML5", level: "proficient" },
+          { name: "CSS3", level: "proficient" },
+          { name: "JavaScript ES6+", level: "proficient" }
         ],
       },
       {
-        title: "Frameworks & Libraries",
+        title: "Libraries",
         items: [
-          { name: "React.js", level: "proficient" }, { name: "React Hooks", level: "proficient" },
-          { name: "React Router", level: "proficient" }, { name: "Redux", level: "familiar" },
-          { name: "Next.js", level: "familiar" }, { name: "Tailwind CSS", level: "proficient" },
+          { name: "React.js", level: "proficient" },
+          { name: "React Hooks", level: "proficient" },
           { name: "Axios", level: "proficient" },
-        ],
-      },
-      {
-        title: "UI & Integration",
-        items: [
-          { name: "Responsive Design", level: "proficient" }, { name: "CORS Handling", level: "proficient" },
-          { name: "JWT Token Refresh", level: "proficient" }, { name: "Axios Interceptors", level: "proficient" },
-          { name: "REST API Integration", level: "expert" }, { name: "Web Accessibility", level: "familiar" },
+          { name: "Tailwind CSS", level: "proficient" }
         ],
       },
     ],
   },
+
   Databases: {
     icon: "🗄",
     groups: [
       {
-        title: "Relational",
+        title: "Relational Databases",
         items: [
-          { name: "PostgreSQL", level: "expert" }, { name: "MySQL", level: "expert" },
-          { name: "Schema Design", level: "proficient" }, { name: "Query Optimization", level: "proficient" },
-          { name: "Indexing", level: "proficient" }, { name: "Transactions / ACID", level: "proficient" },
+          { name: "PostgreSQL", level: "expert" },
+          { name: "MySQL", level: "expert" },
+          { name: "Schema Design", level: "proficient" },
+          { name: "Query Optimization", level: "proficient" }
         ],
       },
       {
         title: "NoSQL & Cache",
         items: [
-          { name: "Redis", level: "expert" }, { name: "Redis Pub/Sub", level: "expert" },
-          { name: "MongoDB", level: "proficient" }, { name: "Cassandra", level: "familiar" },
+          { name: "Redis", level: "expert" },
+          { name: "MongoDB", level: "proficient" }
         ],
       },
       {
-        title: "Vector & AI DBs",
+        title: "Vector Databases",
         items: [
-          { name: "Pinecone", level: "expert" }, { name: "Vector Embeddings", level: "expert" },
-          { name: "Semantic Search", level: "proficient" }, { name: "ChromaDB", level: "familiar" },
-        ],
-      },
-      {
-        title: "ORM & Data Access",
-        items: [
-          { name: "Hibernate", level: "expert" }, { name: "Spring Data JPA", level: "expert" },
-          { name: "JPQL / HQL", level: "proficient" }, { name: "Connection Pooling", level: "proficient" },
+          { name: "Pinecone", level: "proficient" },
+          { name: "Vector Embeddings", level: "proficient" }
         ],
       },
     ],
   },
+
   "DevOps & Cloud": {
-    icon: "🚀",
+    icon: "☁",
     groups: [
       {
-        title: "Containers & Orchestration",
+        title: "Containers & Deployment",
         items: [
-          { name: "Docker", level: "expert" }, { name: "Docker Compose", level: "expert" },
-          { name: "Kubernetes", level: "proficient" }, { name: "Helm", level: "proficient" },
-          { name: "Nginx", level: "proficient" },
+          { name: "Docker", level: "expert" },
+          { name: "Docker Compose", level: "proficient" },
+          { name: "Kubernetes", level: "proficient" },
+          { name: "Nginx", level: "proficient" }
         ],
       },
       {
-        title: "CI/CD Pipelines",
+        title: "CI/CD",
         items: [
-          { name: "Jenkins", level: "expert" }, { name: "GitHub Actions", level: "proficient" },
-          { name: "12-Factor App", level: "proficient" }, { name: "Pipeline as Code", level: "proficient" },
-          { name: "SonarQube", level: "proficient" },
+          { name: "Jenkins", level: "expert" },
+          { name: "GitHub Actions", level: "proficient" },
+          { name: "CI/CD Pipelines", level: "proficient" }
         ],
       },
       {
-        title: "AWS Cloud",
+        title: "AWS",
         items: [
-          { name: "EC2", level: "proficient" }, { name: "S3", level: "proficient" },
-          { name: "RDS", level: "familiar" }, { name: "IAM", level: "familiar" },
-          { name: "CloudWatch", level: "familiar" }, { name: "Lambda", level: "familiar" },
-          { name: "VPC", level: "familiar" },
+          { name: "EC2", level: "proficient" },
+          { name: "S3", level: "proficient" },
+          { name: "CloudWatch", level: "familiar" }
         ],
       },
       {
         title: "Version Control",
         items: [
-          { name: "Git", level: "expert" }, { name: "GitHub", level: "expert" },
-          { name: "Linux / Bash", level: "proficient" }, { name: "Jira", level: "proficient" },
+          { name: "Git", level: "expert" },
+          { name: "GitHub", level: "expert" },
+          { name: "Linux / Bash", level: "proficient" }
         ],
       },
     ],
   },
+
   "AI & ML": {
     icon: "🧠",
     groups: [
       {
-        title: "AI Architectures",
+        title: "AI Systems",
         items: [
-          { name: "RAG", level: "expert" }, { name: "Vector Embeddings", level: "expert" },
-          { name: "Semantic Search", level: "proficient" }, { name: "Prompt Engineering", level: "proficient" },
-          { name: "Document Chunking", level: "proficient" },
+          { name: "RAG", level: "proficient" },
+          { name: "Semantic Search", level: "proficient" },
+          { name: "Vector Embeddings", level: "proficient" },
+          { name: "Prompt Engineering", level: "proficient" }
         ],
       },
       {
-        title: "Frameworks & APIs",
+        title: "Frameworks",
         items: [
-          { name: "OpenAI API", level: "expert" }, { name: "LangChain", level: "proficient" },
-          { name: "Pinecone SDK", level: "expert" }, { name: "FastAPI (ML serving)", level: "proficient" },
-          { name: "HuggingFace", level: "familiar" },
+          { name: "OpenAI API", level: "proficient" },
+          { name: "LangChain", level: "proficient" },
+          { name: "FastAPI (ML Serving)", level: "proficient" }
         ],
       },
       {
-        title: "ML & Data Science",
+        title: "ML Tools",
         items: [
-          { name: "Scikit-learn", level: "proficient" }, { name: "Pandas", level: "proficient" },
-          { name: "NumPy", level: "proficient" }, { name: "Random Forest", level: "proficient" },
-          { name: "Logistic Regression", level: "proficient" }, { name: "TensorFlow", level: "familiar" },
-          { name: "PyTorch", level: "familiar" },
+          { name: "Scikit-learn", level: "proficient" },
+          { name: "Pandas", level: "proficient" },
+          { name: "NumPy", level: "proficient" }
         ],
       },
     ],
   },
+
   Architecture: {
     icon: "🏗",
     groups: [
       {
-        title: "System Design & Patterns",
+        title: "System Design",
         items: [
-          { name: "Microservices", level: "expert" }, { name: "Distributed Systems", level: "expert" },
-          { name: "SOLID Principles", level: "expert" }, { name: "Design Patterns (GoF)", level: "expert" },
-          { name: "Domain-Driven Design", level: "proficient" }, { name: "Event-Driven Arch", level: "proficient" },
-          { name: "CQRS", level: "proficient" }, { name: "Saga Pattern", level: "proficient" },
+          { name: "Microservices Architecture", level: "expert" },
+          { name: "Distributed Systems", level: "expert" },
+          { name: "SOLID Principles", level: "expert" },
+          { name: "Design Patterns", level: "proficient" }
         ],
       },
       {
         title: "Scalability",
         items: [
-          { name: "Horizontal Scaling", level: "expert" }, { name: "Stateless Services", level: "expert" },
-          { name: "Caching Strategies", level: "expert" }, { name: "Load Balancing", level: "proficient" },
-          { name: "Rate Limiting", level: "proficient" }, { name: "CAP Theorem", level: "proficient" },
-        ],
-      },
-      {
-        title: "Security & Auth",
-        items: [
-          { name: "JWT Authentication", level: "expert" }, { name: "RBAC", level: "expert" },
-          { name: "OAuth2", level: "proficient" }, { name: "Spring Security", level: "expert" },
-          { name: "HTTPS / TLS", level: "proficient" },
+          { name: "Horizontal Scaling", level: "expert" },
+          { name: "Caching Strategies", level: "expert" },
+          { name: "Load Balancing", level: "proficient" }
         ],
       },
     ],
   },
+
   Tools: {
     icon: "🛠",
     groups: [
       {
-        title: "IDEs & Editors",
+        title: "Development Tools",
         items: [
-          { name: "IntelliJ IDEA", level: "expert" }, { name: "VS Code", level: "proficient" },
-          { name: "PyCharm", level: "proficient" }, { name: "Jupyter Notebook", level: "proficient" },
+          { name: "IntelliJ IDEA", level: "expert" },
+          { name: "VS Code", level: "proficient" },
+          { name: "Postman", level: "expert" },
+          { name: "Swagger / OpenAPI", level: "proficient" }
         ],
       },
       {
-        title: "API & Quality Tools",
+        title: "Collaboration",
         items: [
-          { name: "Postman", level: "expert" }, { name: "Swagger / OpenAPI", level: "proficient" },
-          { name: "SonarQube", level: "proficient" }, { name: "JaCoCo", level: "proficient" },
-        ],
-      },
-      {
-        title: "Monitoring",
-        items: [
-          { name: "Prometheus", level: "familiar" }, { name: "Grafana", level: "familiar" },
-          { name: "ELK Stack", level: "familiar" }, { name: "CloudWatch", level: "familiar" },
-        ],
-      },
-      {
-        title: "Project & Collab",
-        items: [
-          { name: "Jira", level: "expert" }, { name: "Confluence", level: "proficient" },
-          { name: "Slack", level: "proficient" }, { name: "GitHub Projects", level: "proficient" },
+          { name: "Jira", level: "proficient" },
+          { name: "Confluence", level: "proficient" },
+          { name: "Slack", level: "proficient" }
         ],
       },
     ],
