@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 import { personalInfo } from '../data/portfolio';
 
 const floatingTags = [
-  { text: 'Java',          top: '22%', right: '14%', delay: 0 },
-  { text: 'Spring Boot',   top: '36%', right: '7%',  delay: 1500 },
+  { text: 'Java', top: '22%', right: '14%', delay: 0 },
+  { text: 'Spring Boot', top: '36%', right: '7%', delay: 1500 },
   { text: 'Microservices', top: '58%', right: '18%', delay: 800 },
-  { text: 'AWS',           top: '72%', right: '6%',  delay: 2200 },
-  { text: 'RAG / AI',      top: '48%', right: '32%', delay: 3000 },
-  { text: 'Docker',        top: '28%', right: '28%', delay: 1200 },
+  { text: 'AWS', top: '72%', right: '6%', delay: 2200 },
+  { text: 'RAG / AI', top: '48%', right: '32%', delay: 3000 },
+  { text: 'Docker', top: '28%', right: '28%', delay: 1200 },
 ];
 
 function FadeIn({ children, delay, className, style }) {
@@ -15,10 +15,12 @@ function FadeIn({ children, delay, className, style }) {
   const cn = className || '';
   const s = style || {};
   const [show, setShow] = useState(false);
+
   useEffect(() => {
     const t = setTimeout(() => setShow(true), d);
     return () => clearTimeout(t);
   }, [d]);
+
   return (
     <div
       className={cn}
@@ -110,6 +112,7 @@ export default function Hero() {
           <span className="inline-block w-8 h-px" style={{ background: '#00e5ff' }} />
           Software Engineer · Bengaluru, India
         </p>
+
         <h1
           className="font-syne font-extrabold leading-none mb-1"
           style={{
@@ -121,6 +124,7 @@ export default function Hero() {
         >
           B. Venkatesh
         </h1>
+
         <h1
           className="font-syne font-extrabold leading-none"
           style={{
@@ -135,12 +139,20 @@ export default function Hero() {
       </FadeIn>
 
       <FadeIn delay={650}>
-        <p
-          className="font-serif italic mt-7 max-w-lg leading-relaxed"
-          style={{ fontSize: 'clamp(1rem, 2vw, 1.32rem)', color: '#6b6b80' }}
-        >
-          {personalInfo.tagline}
-        </p>
+        <div className="flex items-center gap-10 mt-7 flex-wrap">
+          <p
+            className="font-serif italic max-w-lg leading-relaxed"
+            style={{ fontSize: 'clamp(1rem, 2vw, 1.32rem)', color: '#6b6b80' }}
+          >
+            {personalInfo.tagline}
+          </p>
+
+          <img
+            src="/profile.jpg"
+            alt="B Venkatesh Reddy"
+            className="w-44 h-44 object-cover rounded-full border-4 border-cyan-400 shadow-xl"
+          />
+        </div>
       </FadeIn>
 
       <FadeIn delay={850} className="flex gap-10 mt-12 flex-wrap">
@@ -161,24 +173,33 @@ export default function Hero() {
       </FadeIn>
 
       <FadeIn delay={1050} className="flex gap-4 mt-14 flex-wrap">
+
         <a
           href="#projects"
           className="px-8 py-3.5 font-mono text-xs tracking-widest uppercase rounded-sm transition-all duration-200 hover:-translate-y-0.5"
           style={{ background: '#00e5ff', color: '#000', fontWeight: 500 }}
-          onMouseEnter={function(e){ e.currentTarget.style.background = '#fff'; }}
-          onMouseLeave={function(e){ e.currentTarget.style.background = '#00e5ff'; }}
         >
           View Projects
         </a>
+
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-3.5 font-mono text-xs tracking-widest uppercase rounded-sm transition-all duration-200 hover:-translate-y-0.5"
+          style={{ border: '1px solid rgba(255,255,255,0.12)', color: '#e8e8f0' }}
+        >
+          Download Resume
+        </a>
+
         <a
           href={'mailto:' + personalInfo.email}
           className="px-8 py-3.5 font-mono text-xs tracking-widest uppercase rounded-sm transition-all duration-200 hover:-translate-y-0.5"
           style={{ border: '1px solid rgba(255,255,255,0.12)', color: '#e8e8f0' }}
-          onMouseEnter={function(e){ e.currentTarget.style.borderColor = '#00e5ff'; e.currentTarget.style.color = '#00e5ff'; }}
-          onMouseLeave={function(e){ e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)'; e.currentTarget.style.color = '#e8e8f0'; }}
         >
           Get In Touch
         </a>
+
       </FadeIn>
 
       <FadeIn
