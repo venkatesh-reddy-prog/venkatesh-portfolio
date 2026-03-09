@@ -19,7 +19,7 @@ export default function Profiles() {
             <div className="font-syne font-extrabold text-2xl mb-1" style={{ color: p.color }}>{p.platform}</div>
             <div className="font-mono text-xs text-muted mb-6">{p.handle}</div>
             <div className="space-y-2 mb-7">
-              {p.stats.map((s, j) => (
+              {(p.stats ?? []).map((s, j) => (
                 <div key={j} className="flex justify-between font-mono text-xs">
                   <span className="text-muted">{s.label}</span>
                   <span className="text-accent">{s.value}</span>

@@ -242,17 +242,29 @@ export const codingProfiles = [
     handle: "@Venkatesh070",
     color: "#ffa116",
     link: "https://leetcode.com/u/Venkatesh070/",
+    stats: [
+      { label: "Problems Solved", value: "100+" },
+      { label: "Contest Rating", value: "1500+" },
+    ],
   },
   {
     platform: "HackerRank",
     handle: "@bvenkateshreddy2",
     color: "#2ec866",
     link: "https://www.hackerrank.com/profile/bvenkateshreddy2",
+    stats: [
+      { label: "Badges", value: "5★ Java" },
+      { label: "Certifications", value: "2" },
+    ],
   },
   {
     platform: "GitHub",
     handle: "@venkatesh-reddy-prog",
     color: "#e8e8f0",
     link: "https://github.com/venkatesh-reddy-prog",
+    stats: [
+      { label: "Repositories", value: "20+" },
+      { label: "Contributions", value: "500+" },
+    ],
   },
 ];
