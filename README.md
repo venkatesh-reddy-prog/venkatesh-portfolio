@@ -3,7 +3,6 @@
 ![React](https://img.shields.io/badge/React-18-blue?logo=react)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38bdf8?logo=tailwindcss)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 A **modern, interactive developer portfolio website designed and developed by B. Venkatesh Reddy** using **React**, **Tailwind CSS**, and **JavaScript**.
 
